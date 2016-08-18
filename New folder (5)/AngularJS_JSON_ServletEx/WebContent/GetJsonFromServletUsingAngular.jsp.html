@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="ISO-8859-1">
+<title>Learning Angular JS</title>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/getDataAjax.js"></script>
+</head>
+<body ng-app="myModule">
+
+<div ng-controller="myController">
+<button ng-click="getDataFromServer()">Fetch Data </button>
+	<div>
+		Name: {{person.name}}
+	</div>
+	<div>
+		Id: {{person.id}}
+	</div>
+	<div>
+	 Grade: {{person.grade}}
+	</div>
+</div>
+</body>
+</html>
